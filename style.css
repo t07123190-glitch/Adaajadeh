@@ -1,0 +1,74 @@
+@view-transition {
+  navigation: auto; /* Enables transition between pages */
+}
+
+/* This makes the whole page fade in and out */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.5s;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+:root{
+    --background-color: #EDC7CF;
+    --text-color: #AF1B3F;
+    --buttons-color:#EDE7D9;
+
+}
+h1{
+    color: var(--text-color);
+    font-family: "HW Agilo DB";
+}
+body{
+    background-color: var(--background-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    min-height: 100vh;      
+    margin: 0;               
+}
+.pic1{
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.answerbuttons{
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Noteworthy Bold";
+    display: flex;
+    justify-content: center; 
+    gap: 10px;              
+}
+.links{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 15px 26px;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    background-color: var(--buttons-color);
+    display: inline-block;
+    min-width: 80px;
+}
+.links:hover{
+    background-color: var(--text-color);
+    color: var(--buttons-color);
+    border:2px solid var(--buttons-color);
+    transition: 0.2s ease-in-out;
+}
+.boxcontainer{
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;           
+    max-width: 350px;
+    padding: 20px;        
+    margin: auto;         
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}

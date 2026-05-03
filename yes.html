@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://db.onlinewebfonts.com/c/9f5c8857b8e6c8fac8ae3f14891d81c1?family=Windblow" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/2209bd19c45fb4f92b406d4ea1e0f497?family=badboy+cre" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/0a7eb5b18d231e9771e9fd2c20c543af?family=HW+Agilo+DB" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/f4bc352b52c96ca087093d36bd2396bb?family=Noteworthy+Bold" rel="stylesheet">
+    <title>Ilysm!</title>
+    <style>
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-box {
+            background: var(--buttons-color);
+            width: 85%;           
+            max-width: 350px;   
+            padding: 25px;        
+            box-sizing: border-box;
+            border-radius: 15px;
+            text-align: center;
+            font-family: "Noteworthy Bold";
+            transition: 0.2s ease-in-out;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .popup-box button {
+            margin-top: 20px;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-overlay" id="popup">
+        <div class="popup-box">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum cumque, sit accusantium rerum optio iusto debitis officia, dolorum aperiam quis. Assumenda itaque enim dolorem voluptas commodi minus, veniam iusto!</h2>
+            <a href="index.html">
+                <button type="button">Ilyt!!</button>
+            </a>
+        </div>
+    </div>
+    <div class="boxcontainer">
+        <h1>I have a message for u!</h1>
+            <img src="pic1.jpeg" class="pic1">
+        <h1>Do you want to read it?</h1>
+        <div class="answerbuttons">
+            <a href="yes.html" class="links">yes!</a>
+            <a href="no.html" class="links">no</a>
+        </div>
+    </div>
+</body>
+</html>
